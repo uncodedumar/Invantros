@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
+import Link from 'next/link'; // Added Link import
 
 const GrowSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -78,14 +79,18 @@ const GrowSection = () => {
 
         {/* Right Side: #28193d CTA Button */}
         <div className="border-t md:border-t-0 md:border-l border-black p-4 flex items-center justify-center">
-          <button 
-            className="bg-[#28193d] text-white w-full h-[120px] md:h-[150px] rounded-xl flex items-center justify-center transition-all duration-300 hover:brightness-125 focus:outline-none focus:ring-2 focus:ring-[#28193d] focus:ring-offset-2 active:scale-[0.98]"
-            aria-label="Work with Antrosys and join the InvanTros community"
-          >
-            <span className="text-[10px] md:text-xs font-bold tracking-widest">
-              WORK WITH US
-            </span>
-          </button>
+          
+          <Link href="/Contact" className="w-full">
+            <button
+              className="bg-[#28193d] text-white w-full h-[120px] md:h-[150px] rounded-xl flex items-center justify-center transition-all duration-300 hover:brightness-125 focus:outline-none focus:ring-2 focus:ring-[#28193d] focus:ring-offset-2 active:scale-[0.98]"
+              aria-label="Work with Antrosys and join the InvanTros community"
+            >
+              <span className="text-[10px] md:text-xs font-bold tracking-widest">
+                WORK WITH US
+              </span>
+            </button>
+          </Link>
+          
         </div>
       </div>
     </section>

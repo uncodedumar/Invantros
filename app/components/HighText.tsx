@@ -56,24 +56,18 @@ const InvanTrosSection: React.FC = () => {
           <motion.p
             variants={sectionVariants}
             custom={0.2}
-            className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-normal tracking-tight text-zinc-900"
+            className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-light tracking-tight text-zinc-900"
           >
-            <span style={{ color: '#28193d' }} className="font-bold">InvanTros</span> is Pakistan’s largest tech and entrepreneurship community, 
-            a powerhouse for students, developers, and researchers. In collaboration with over 20 elite 
-            universities—including students from <span className="font-medium">NUST, FAST, LUMS & NASTP</span>—we bridge the gap 
-            between academic brilliance and industrial evolution.
+            <span style={{ color: '#28193d' }} className="font-bold">Invantros </span>is an elite "War Room" designed to bridge the gap between Pakistan’s premier academic talent—from <span className="font-medium">NUST, FAST, LUMS & NASTP </span>and the global digital frontier. We bypass the noise of traditional networking, offering a merit-driven ecosystem where founders, developers, and creatives prioritize "Proof of Work" to engineer the future six months ahead of the curve.
           </motion.p>
 
           {/* Paragraph 2 */}
           <motion.p
             variants={sectionVariants}
             custom={0.5}
-            className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-normal tracking-tight text-zinc-800"
+            className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-light tracking-tight text-zinc-800"
           >
-            Powered by <span className="font-semibold italic">Passionates</span>, we provide the infrastructure 
-            for startups to stand tall. From the halls of <span className="font-medium">Air University and NASTP</span> to 
-            the global digital landscape, we empower creative minds to build disruptive projects, 
-            master AI integrations, and dominate the next generation of SaaS.
+           To provide the infrastructure necessary for digital domination, <span className="font-semibold italic">Invantros </span>is strategically powered by industry leaders <span className="font-bold">Antrosys LLC, Devmach, Bricklix, & Cinqo Media AU.</span> This alliance grants our members exclusive access to world-class AI models, full-stack expertise, and high-performance strategy, transforming raw ambition into sophisticated, market-ready realities.
           </motion.p>
         </motion.div>
       </div>

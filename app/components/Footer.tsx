@@ -57,10 +57,10 @@ const Footer = () => {
               <nav className="p-6 sm:p-8 md:p-12 border-b sm:border-b-0 sm:border-r border-white/20 space-y-3" aria-label="Footer Main">
                 <p className="font-bold mb-4 md:mb-6 text-[14px]">Home</p>
                 <ul className="space-y-3">
-                  <li><a href="#" className="hover:opacity-70 transition-opacity block">Results</a></li>
-                  <li><a href="#" className="hover:opacity-70 transition-opacity block">About</a></li>
-                  <li><a href="#" className="hover:opacity-70 transition-opacity block">Contact</a></li>
-                  <li><a href="#" className="hover:opacity-70 transition-opacity block">Blog</a></li>
+                  <li><a href="/Work" className="hover:opacity-70 transition-opacity block">Projects</a></li>
+                  <li><a href="/about" className="hover:opacity-70 transition-opacity block">About</a></li>
+                  <li><a href="/Events" className="hover:opacity-70 transition-opacity block">Events</a></li>
+                  <li><a href="/Contact" className="hover:opacity-70 transition-opacity block">Contact</a></li>
                 </ul>
               </nav>
 

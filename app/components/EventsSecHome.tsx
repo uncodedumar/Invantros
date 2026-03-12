@@ -57,8 +57,8 @@ const EventsSection = () => {
           aria-hidden="true"
         >
           <div className="inline-block animate-scroll text-[150px] md:text-[250px] font-black uppercase leading-none">
-            Events • Experiences • Innovation • Antrosys • Events • Experiences • Innovation • Antrosys •&nbsp;
-            Events • Experiences • Innovation • Antrosys • Events • Experiences • Innovation • Antrosys •
+            Events • Experiences • Innovation • Events • Experiences • Innovation • Antrosys •&nbsp;
+            Events • Experiences • Innovation • Events • Experiences • Innovation • Antrosys •
           </div>
         </div>
 

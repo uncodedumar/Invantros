@@ -29,7 +29,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Hero Container */}
-      <div className="relative h-[80vh] md:h-[88vh] w-full overflow-hidden rounded-[25px] shadow-sm">
+      <div className="relative h-[80vh] md:h-[88vh] w-full overflow-hidden rounded-[5px] shadow-sm">
         
         {/* Background Video - Optimized for responsiveness and smoothness */}
         <video
@@ -41,7 +41,7 @@ const HeroSection = () => {
           title="Invantros Community Background"
           className="absolute inset-0 w-full h-full object-cover scale-105 pointer-events-none"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/Videos/1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -53,16 +53,15 @@ const HeroSection = () => {
           
           <h1 
             id="hero-heading"
-            className="font-['Poppins'] font-black text-5xl md:text-8xl lg:text-9xl text-[#0A0A0A] uppercase tracking-[-0.04em] leading-[0.85] drop-shadow-sm"
+            className="font-['Poppins'] font-black text-5xl md:text-8xl lg:text-9xl text-white uppercase tracking-[-0.04em] leading-[0.85] drop-shadow-sm"
           >
             Connecting <br /> 
-            <span className="text-[#0A0A0A]">World-Class</span> <br />
-            <span className="text-[#0A0A0A]">Talent.</span>
+            <span className="text-white">World-Class</span> <br />
+            <span className="text-white">Talent.</span>
           </h1>
           
-          <p className="font-['Poppins'] font-medium mt-10 max-w-3xl text-lg md:text-2xl text-[#1A1A1A]/90 leading-relaxed tracking-tight">
-            Bridging the gap between breakthrough research and scalable reality. 
-            Join the network of the world’s most ambitious minds.
+          <p className="font-['Poppins'] font-medium mt-10 max-w-3xl text-lg md:text-2xl text-white leading-relaxed tracking-tight">
+          Invantros is the high-velocity ecosystem where ambitious founders, elite developers, and visionary creatives dissolve the barriers between bold ideas and global impact.
           </p>
 
           {/* Button: Now using #28193d as the primary action color 

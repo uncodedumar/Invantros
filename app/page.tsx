@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
+import Cards from "./components/cards"
 import MainText from "./components/MainText";
 import Work from "./components/Work";
 import SecondMainText from "./components/SecondMainText";
@@ -18,6 +19,7 @@ export default function Home() {
     <>
 
     <HeroSection/>
+    <Cards/>
     <MainText/>
     <Work/>
     <SecondMainText/>

@@ -1,13 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const LoadingScreen = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+interface LoadingScreenProps {
+  children: React.ReactNode;
+}
 
-  // Animation variants for the columns
-  // Typed as any to stay flexible with Framer Motion's evolving Variant API
+const LoadingScreen = ({ children }: LoadingScreenProps) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+
+  // Darkened version of your original color
+  const primaryColor = "#2D1B36"; 
+
   const columnVariants: any = {
     initial: { height: "0%" },
     animate: (i: number) => ({
@@ -29,31 +35,50 @@ const LoadingScreen = () => {
   };
 
   return (
-    <AnimatePresence>
-      {!isLoaded && (
+    <>
+      <AnimatePresence mode="wait">
+        {!isLoaded && (
+          <motion.div
+            key="loader"
+            className="fixed inset-0 z-[9999] flex overflow-hidden bg-transparent"
+          >
+            {[...Array(5)].map((_, i) => (
+              <motion.div
+                key={i}
+                custom={i}
+                variants={columnVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                onAnimationComplete={() => {
+                  // Once the 5th column finished animating UP, 
+                  // we mark the loader as finished.
+                  if (i === 4) {
+                    setIsLoaded(true);
+                    setShowContent(true);
+                  }
+                }}
+                className="relative h-full flex-1"
+                style={{ backgroundColor: primaryColor }}
+              />
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* This ensures that 'children' (your site) are only rendered 
+          once the loading animation is complete. 
+      */}
+      {showContent && (
         <motion.div
-          // Highest z-index to stay above nav/footer
-          className="fixed inset-0 z-[9999] flex overflow-hidden bg-transparent pointer-events-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
-          {[...Array(5)].map((_, i) => (
-            <motion.div
-              key={i}
-              custom={i}
-              variants={columnVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              // Only the last column triggers the removal of the component
-              onAnimationComplete={() => {
-                if (i === 4) setIsLoaded(true);
-              }}
-              className="relative h-full flex-1 pointer-events-auto"
-              style={{ backgroundColor: "#68507B" }}
-            />
-          ))}
+          {children}
         </motion.div>
       )}
-    </AnimatePresence>
+    </>
   );
 };
 

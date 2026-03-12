@@ -49,9 +49,9 @@ const Counter = ({ value, duration = 2 }: CounterProps) => {
 
 const DataSection = () => {
   const stats = [
-    { label: "AVERAGE YEAR OVER YEAR GROWTH", value: "2X" },
-    { label: "CLIENT EXITS", value: "6" },
-    { label: "WEEKS TO MEASURABLE GROWTH", value: "8" },
+    { label: "Students Across Universities", value: "2000+" },
+    { label: "Platforms", value: "10+" },
+    { label: "Affiliations", value: "8+" },
   ];
 
   const fadeInVariants: any = {
@@ -101,7 +101,7 @@ const DataSection = () => {
             variants={fadeInVariants}
             className="text-5xl lg:text-7xl font-bold leading-tight tracking-tighter uppercase transition-colors duration-500 text-gray-500 group-hover:text-[#28193d] cursor-default"
           >
-            Our <br /> Data <br /> Does The <br /> Talking
+            Not <br /> Like <br /> Others
           </motion.h2>
         </div>
 
@@ -129,10 +129,10 @@ const DataSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 border-b border-white/20">
             <div className="col-span-1 lg:border-r border-white/20 p-6 md:p-8 flex flex-col justify-center group transition-colors duration-500 hover:bg-[#28193d]/10">
                <div className="text-5xl lg:text-7xl font-bold transition-colors duration-500 text-gray-500 group-hover:text-white">
-                <Counter value="$2.7bn" />
+                <Counter value="500M" />
               </div>
               <div className="text-[10px] md:text-[11px] uppercase tracking-widest font-bold mt-2 opacity-80">
-                VC FUNDING RAISED BY OUR PARTNERS
+                FUNDING RAISED BY OUR PARTNERS
               </div>
             </div>
             
@@ -151,13 +151,13 @@ const DataSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3">
              <div className="col-span-1 sm:border-r border-white/20 p-6 md:p-8 group transition-colors duration-500 hover:bg-[#28193d]/10 border-b sm:border-b-0 border-white/20">
                 <div className="text-5xl lg:text-7xl font-bold transition-colors duration-500 text-gray-500 group-hover:text-white">
-                    <Counter value="200+" />
+                    <Counter value="20+" />
                 </div>
-                <div className="text-[10px] md:text-[11px] uppercase tracking-widest font-bold opacity-80">CLIENTS WE&apos;VE HELPED SCALE</div>
+                <div className="text-[10px] md:text-[11px] uppercase tracking-widest font-bold opacity-80">Startups WE&apos;VE HELPED SCALE</div>
              </div>
              <div className="col-span-1 sm:border-r border-white/20 p-6 md:p-8 group transition-colors duration-500 hover:bg-[#28193d]/10 border-b sm:border-b-0 border-white/20">
                 <div className="text-5xl lg:text-7xl font-bold transition-colors duration-500 text-gray-500 group-hover:text-white">
-                    <Counter value="12" />
+                    <Counter value="5" />
                 </div>
                 <div className="text-[10px] md:text-[11px] uppercase tracking-widest font-bold opacity-80">YEARS SCALING AMBITIOUS STARUPS</div>
              </div>

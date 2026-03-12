@@ -4,21 +4,34 @@ import React from "react";
 
 // Data arrays remain the same
 const row1 = [
-  { name: "Analog Services", src: "/devmach.svg" },
-  { name: "Sequel", src: "/antrosys.svg" },
-  { name: "UCSF", src: "/bricklix.svg" },
-  { name: "Lumanu", src: "/logos/lumanu.svg" },
+  { name: "Analog Services", src: "/Collabs/DEVMACH.png" },
+  { name: "Sequel", src: "/Collabs/ANTROSYS.png" },
+  { name: "UCSF", src: "/Collabs/BRICKLIX.png" },
+  { name: "Lumanu", src: "/Collabs/CINQO.png" },
 ];
 
 const row2 = [
-  { name: "Maze", src: "/logos/maze.svg" },
-  { name: "Conduit", src: "/logos/conduit.svg" },
-  { name: "JetBrains", src: "/logos/jetbrains.svg" },
-  { name: "Henry", src: "/logos/henry.svg" },
-  { name: "Superhuman", src: "/logos/superhuman.svg" },
-  { name: "Grammarly", src: "/logos/grammarly.svg" },
-  { name: "Lightstone Direct", src: "/logos/lightstone.svg" },
-  { name: "Vividly", src: "/logos/vividly.svg" },
+
+  { name: "Grammarly", src: "/Collabs/cui.png" },
+  { name: "Vividly", src: "/Collabs/must.png" },
+
+  { name: "JetBrains", src: "/Collabs/kemu.png" },
+  { name: "Henry", src: "/Collabs/gcu.png" },
+  { name: "Superhuman", src: "/Collabs/glasgow.png" },
+  { name: "Maze", src: "/Collabs/air.png" },
+  { name: "Conduit", src: "/Collabs/bnu.png" },
+  { name: "Vividly", src: "/Collabs/lums.png" },
+  { name: "Lightstone Direct", src: "/Collabs/fast.png" },
+  { name: "Vividly", src: "/Collabs/itu.png" },
+  { name: "Vividly", src: "/Collabs/pu.png" },
+  { name: "Vividly", src: "/Collabs/uol.webp" },
+  { name: "Vividly", src: "/Collabs/uvas.webp" },
+
+  { name: "Vividly", src: "/Collabs/nust.png" },
+  { name: "Vividly", src: "/Collabs/uet.png" },
+
+
+
 ];
 
 export default function TrustedBySection() {
@@ -69,14 +82,14 @@ export default function TrustedBySection() {
         }}
       >
         {/* Row 1: Static / Centered */}
-        <div className="relative z-10 flex justify-center items-center px-8 gap-8 md:gap-16 flex-wrap">
+        <div className="relative z-10 flex justify-center items-center px-6 gap-4 md:gap-10 flex-wrap">
           {row1.map((logo, i) => (
             <img 
               key={`row1-${i}`} 
               src={logo.src} 
               alt={`${logo.name} logo`} 
               loading="lazy"
-              className="h-6 md:h-9 w-auto object-contain opacity-80 transition-all duration-300 hover:opacity-100 hover:scale-105" 
+              className="mx-2 h-10 md:h-20 w-auto  object-contain " 
             />
           ))}
         </div>
@@ -94,7 +107,7 @@ export default function TrustedBySection() {
                 src={logo.src} 
                 alt={`${logo.name} logo`}
                 loading="lazy"
-                className="mx-2 h-6 md:h-10 w-auto brightness-0 invert object-contain opacity-80" 
+                className="mx-2 h-10 md:h-20 w-auto  object-contain " 
               />
             ))}
           </div>

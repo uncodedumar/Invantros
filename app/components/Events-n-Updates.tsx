@@ -49,9 +49,9 @@ const rowData: RowData[] = [
     description: "Join Muhammad Umar Riaz for an exclusive deep dive into custom AI model training and generative aesthetics.",
     time: "10:00 AM",
     date: "March 15, 2026",
-    speakers: ["Umar Riaz", "Sarah Chen"],
+    speakers: ["Amna Imran", "Zoya Umar" , "Fatir Bin Irfan"],
     imageUrl: "https://picsum.photos/400/400?random=1",
-    link: "/events/ai-mastery",
+    link: "/#",
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ const rowData: RowData[] = [
     title: "SaaS Engine v4.0",
     description: "We've deployed a major update to our core SaaS infrastructure, reducing latency by 40% for all enterprise clients.",
     imageUrl: "https://picsum.photos/400/400?random=2",
-    link: "/updates/saas-v4",
+    link: "/#",
   },
   {
     id: 3,
@@ -70,15 +70,15 @@ const rowData: RowData[] = [
     date: "April 02, 2026",
     speakers: ["Invantros Team", "University Leads"],
     imageUrl: "https://picsum.photos/400/400?random=3",
-    link: "/events/uni-tour",
+    link: "/#",
   },
   {
     id: 4,
     type: "Update",
     title: "Design Systems 2026",
-    description: "Antrosys releases new UI/UX guidelines for high-performance cross-platform mobile applications.",
+    description: "Devmach releases new UI/UX guidelines for high-performance cross-platform mobile applications.",
     imageUrl: "https://picsum.photos/400/400?random=4",
-    link: "/updates/design-systems",
+    link: "/#",
   },
   {
     id: 5,
@@ -89,7 +89,7 @@ const rowData: RowData[] = [
     date: "May 10, 2026",
     speakers: ["Umar Riaz"],
     imageUrl: "https://picsum.photos/400/400?random=5",
-    link: "/events/founders-circle",
+    link: "/#",
   },
 ];
 

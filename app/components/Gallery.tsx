@@ -64,7 +64,7 @@ const BentoItem = ({ src, sizeClass, alt }: BentoItemProps) => {
 
 const BentoSection = () => {
   const items = [
-    { id: 1, size: 'col-span-1 md:col-span-5 md:row-span-5', src: '/Images/1b.avif', alt: 'Invantros Startup Collaboration Hub' },
+    { id: 1, size: 'col-span-1 md:col-span-5 md:row-span-5', src: '/Images/1b.png', alt: 'Invantros Startup Collaboration Hub' },
     { id: 2, size: 'col-span-1 md:col-span-4 md:row-span-4', src: '/Images/2b.avif', alt: 'Pakistan Tech Community Networking' },
     { id: 3, size: 'col-span-1 md:col-span-1 md:row-span-1', src: '/Images/3b.avif', alt: 'Developer Resources Antrosys' },
     { id: 4, size: 'col-span-1 md:col-span-4 md:row-span-4', src: '/Images/4b.avif', alt: 'Entrepreneurship Ecosystem Pakistan' },

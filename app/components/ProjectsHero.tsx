@@ -35,9 +35,9 @@ const CountUp = ({ value, suffix = "" }: { value: number; suffix?: string }) => 
 const ProjectHero = () => {
   const stats = [
     { label: "AVERAGE YEAR OVER YEAR GROWTH", value: 2, suffix: "X" },
-    { label: "CLIENT EXITS", value: 6, suffix: "" },
-    { label: "CLIENTS WE'VE HELPED SCALE", value: 150, suffix: "+" },
-    { label: "YEARS SCALING AMBITIOUS BUSINESSES", value: 10, suffix: "+" },
+    { label: "AFFILIATIONS", value: 8, suffix: "+" },
+    { label: "PLATFORMS", value: 10, suffix: "+" },
+    { label: "YEARS SCALING AMBITIOUS BUSINESSES", value: 5, suffix: "+" },
     { label: "YAWNS IN THE BOARDROOM", value: 0, suffix: "" },
   ];
 

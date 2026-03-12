@@ -10,18 +10,18 @@ interface Service {
 }
 
 const services: Service[] = [
-  { id: 1, title: "Artificial Intelligence", videoSrc: "/videos/ai.mp4" },
-  { id: 2, title: "Computer Science", videoSrc: "/videos/cs.mp4" },
-  { id: 3, title: "High-Growth Startups", videoSrc: "/videos/startups.mp4" },
-  { id: 4, title: "Academic Researchers", videoSrc: "/videos/researchers.mp4" },
-  { id: 5, title: "Engineers & Developers", videoSrc: "/videos/developers.mp4" },
-  { id: 6, title: "UI/UX & Visual Designers", videoSrc: "/videos/designers.mp4" },
-  { id: 7, title: "Medical & Health Tech", videoSrc: "/videos/med-students.mp4" },
-  { id: 8, title: "Enterprise Teams", videoSrc: "/videos/teams.mp4" },
-  { id: 9, title: "Collaborative Groups", videoSrc: "/videos/groups.mp4" },
-  { id: 10, title: "Creative Innovators", videoSrc: "/videos/creative-ppl.mp4" },
-  { id: 11, title: "Global Companies", videoSrc: "/videos/companies.mp4" },
-  { id: 12, title: "Next-Gen Students", videoSrc: "/videos/students.mp4" },
+  { id: 1, title: "Artificial Intelligence", videoSrc: "/Videos/ai.mp4" },
+  { id: 2, title: "Computer Science", videoSrc: "/Videos/cs.mp4" },
+  { id: 3, title: "High-Growth Startups", videoSrc: "/Videos/startups.mp4" },
+  { id: 4, title: "Academic Researchers", videoSrc: "/Videos/researchers.mp4" },
+  { id: 5, title: "Engineers & Developers", videoSrc: "/Videos/developers.mp4" },
+  { id: 6, title: "UI/UX & Visual Designers", videoSrc: "/Videos/designers.mp4" },
+  { id: 7, title: "Medical & Health Tech", videoSrc: "/Videos/med-students.mp4" },
+  { id: 8, title: "Enterprise Teams", videoSrc: "/Videos/teams.mp4" },
+  { id: 9, title: "Collaborative Groups", videoSrc: "/Videos/Collaborative Groups.mp4" },
+  { id: 10, title: "Creative Innovators", videoSrc: "/Videos/creative-ppl.mp4" },
+  { id: 11, title: "Global Companies", videoSrc: "/Videos/companies.mp4" },
+  { id: 12, title: "Next-Gen Students", videoSrc: "/Videos/students.mp4" },
 ];
 
 export default function ServicesGrid() {

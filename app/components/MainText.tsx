@@ -21,7 +21,7 @@ const MainText: React.FC = () => {
     restDelta: 0.001
   });
 
-  const fullText = "Where Pakistan’s Brightest Minds Build the Future.";
+  const fullText = "The Architectural Core of Digital Domination.";
   
   // Adjusted thresholds for smoother character revealing
   const charactersToDisplay = useTransform(smoothProgress, [0.1, 0.45], [0, fullText.length]);
@@ -65,53 +65,11 @@ const MainText: React.FC = () => {
       {/* --- CONTENT CONTAINER --- */}
       <div className="relative z-10 w-full max-w-[90%] md:w-[85%] lg:max-w-6xl px-4 sm:px-8 py-[5%] text-left">
         
-        {/* Top Tagline */}
-        <div className="relative mb-6 inline-flex flex-col items-start">
-          <div className="mb-2 h-5 w-5 sm:h-6 sm:w-6">
-          <svg 
-  viewBox="0 0 44 54" 
-  fill="none" 
-  className="h-full w-full" 
-  xmlns="http://www.w3.org/2000/svg" 
-  aria-hidden="true"
->
-  {/* Main Center Figure */}
-  <path 
-    d="M22 22C26.4183 22 30 18.4183 30 14C30 9.58172 26.4183 6 22 6C17.5817 6 14 9.58172 14 14C14 18.4183 17.5817 22 22 22Z" 
-    stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-  />
-  <path 
-    d="M6 46C6 38.268 13.1634 32 22 32C30.8366 32 38 38.268 38 46" 
-    stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-  />
-  
-  {/* Left Supporting Figure */}
-  <path 
-    d="M12 28C14.7614 28 17 25.7614 17 23C17 20.2386 14.7614 18 12 18C9.23858 18 7 20.2386 7 23C7 25.7614 9.23858 28 12 28Z" 
-    stroke="black" strokeWidth="2"
-  />
-  <path 
-    d="M2 42C2 37.5817 5.58172 34 10 34" 
-    stroke="black" strokeWidth="2" strokeLinecap="round"
-  />
-
-  {/* Right Supporting Figure */}
-  <path 
-    d="M32 28C34.7614 28 37 25.7614 37 23C37 20.2386 34.7614 18 32 18C29.2386 18 27 20.2386 27 23C27 25.7614 29.2386 28 32 28Z" 
-    stroke="black" strokeWidth="2"
-  />
-  <path 
-    d="M34 34C38.4183 34 42 37.5817 42 42" 
-    stroke="black" strokeWidth="2" strokeLinecap="round"
-  />
-</svg></div>
-          <span className="text-[10px] font-bold uppercase tracking-[0.25em] sm:text-[11px]">
-          More Than a Community. An Engine for Innovation.          </span>
-        </div>
+       
 
         {/* Main Headline */}
         <h1 
-          className="mb-6 text-3xl font-black leading-[1.1] tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl uppercase"
+          className="mb-6 text-5xl font-bold leading-[1.1] tracking-tighter sm:text-5xl md:text-7xl lg:text-7xl uppercase"
           aria-label={fullText}
         >
           <span className="relative">
@@ -126,7 +84,7 @@ const MainText: React.FC = () => {
 
         {/* Supporting Description */}
         <p className="w-full text-sm font-medium leading-relaxed text-gray-600 sm:text-base md:text-lg">
-  The ultimate ecosystem for startups, developers, designers, and researchers. In collaboration with 20+ premier universities, Invantros is the heartbeat of Pakistan’s tech revolution.
+        Invantros is a high-velocity, cross-disciplinary ecosystem where the traditional barriers between ambition and access are dissolved. It is a premier meritocracy that converges the vision of founders, the precision of developers, and the soul of creative artists into a single, powerhouse network of "Proof of Work." Built on the foundation of sophisticated, next-gen digital transformation.
 </p>
       </div>
 

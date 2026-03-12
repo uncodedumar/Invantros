@@ -98,7 +98,7 @@ const BentoGrid = () => {
         {/* Tropical Box Small */}
         <div className="col-span-2 md:col-span-2 row-span-1 rounded-xl overflow-hidden">
           <img 
-            src="/path-to-tropical.jpg" 
+            src="/Images/bo1.avif" 
             className="w-full h-full object-cover" 
             alt="Creative Digital Asset for InvanTros community" 
           />
@@ -112,7 +112,7 @@ const BentoGrid = () => {
         {/* Yellow Fork Box */}
         <div className="col-span-4 md:col-span-4 row-span-1 bg-[#FFD700] rounded-xl flex items-center justify-center overflow-hidden">
             <img 
-              src="/path-to-fork-icon.png" 
+              src="/Images/asterisk.png" 
               className="w-16 h-16 object-contain" 
               alt="Culinary Tech Innovation Symbol" 
             />
@@ -128,17 +128,21 @@ const BentoGrid = () => {
         </div>
 
         {/* Video Column (Right Tall) */}
-        <VideoItem src="/path-to-cyber-video.mp4" className="col-span-4 md:col-span-2 row-span-2" />
+        <VideoItem src="/Videos/bbV.mp4" className="col-span-4 md:col-span-2 row-span-2" />
 
-        {/* Pfizer Logo */}
-        <div className="col-span-2 md:col-span-2 row-span-1 bg-white border border-gray-100 rounded-xl flex items-center justify-center p-4">
-            <img src="/pfizer-logo.svg" className="w-full h-auto" alt="Pfizer Brand Partner" />
-        </div>
+      {/* Pfizer Logo */}
+<div className="col-span-2 md:col-span-2 row-span-1 bg-purple border border-gray-100 rounded-xl flex items-center justify-center p-4">
+  <a href="www.instagram.com/invantros" target="_blank" rel="noopener noreferrer">
+    <img src="/Images/instagram-brands-solid-full.svg" className="w-16 h-auto" alt="Pfizer Brand Partner" />
+  </a>
+</div>
 
-        {/* Discord Logo */}
-        <div className="col-span-2 md:col-span-2 row-span-1 bg-[#5865F2] rounded-xl flex items-center justify-center p-4">
-            <img src="/discord-white.svg" className="w-16 h-auto" alt="Join our Discord Community" />
-        </div>
+{/* Discord Logo */}
+<div className="col-span-2 md:col-span-2 row-span-1 bg-[#f7efdc] rounded-xl flex items-center justify-center p-4">
+  <a href="https://www.whatsapp.com/channel/0029Vb6yA9DATRSgFD2X9b2B" target="_blank" rel="noopener noreferrer">
+    <img src="/Images/whatsapp-brands-solid-full.svg" className="w-16 h-auto" alt="Join our Discord Community" />
+  </a>
+</div>
 
         {/* Branding Footer Bar */}
         <footer className="col-span-4 md:col-span-8 lg:col-span-12 h-[30px] flex items-center overflow-hidden">

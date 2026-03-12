@@ -21,7 +21,7 @@ const socialData: SocialRow[] = [
   {
     id: 1,
     platform: "WhatsApp Channel",
-    title: "The Antrosys Feed",
+    title: "The Invantros Feed",
     description: "Get real-time updates on AI art drops, custom model releases, and exclusive design insights directly from Umar Riaz.",
     imageUrl: "/WAchannel.png",
     link: "https://whatsapp.com/channel/0029Vb6yA9DATRSgFD2X9b2B",
@@ -42,7 +42,7 @@ const socialData: SocialRow[] = [
     id: 3,
     platform: "Instagram",
     title: "Visual Excellence",
-    description: "Experience the aesthetic side of Antrosys. Behind-the-scenes of our UI/UX process and high-performance AI art.",
+    description: "Experience the aesthetic side of Invnatros. Behind-the-scenes of our UI/UX process and high-performance AI art.",
     imageUrl: "/ig.png",
     link: "https://www.instagram.com/invantros",
     btnText: "Follow Us",
@@ -66,7 +66,7 @@ const socialData: SocialRow[] = [
     description: "Fast-paced tech updates, dev logs for our AWS infrastructure, and snapshots of the digital landscape.",
     imageUrl: "/x.png",
     link: "https://www.x.com/invantros",
-    btnText: "Follow @Antrosys",
+    btnText: "Follow @Invantros",
     icon: <Twitter className="text-[#000000]" size={32} aria-hidden="true" />,
   },
 ];

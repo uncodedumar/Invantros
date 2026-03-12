@@ -17,7 +17,7 @@ const SecondMainText = () => {
     { stiffness: 100, damping: 30, restDelta: 0.001 }
   );
 
-  const text = "Invantros is a multidisciplinary powerhouse designed to bridge the gap between academic brilliance and industrial excellence. We bring together students from NUST, FAST, LUMS, GIKI, and 16+ other top-tier institutions to collaborate with seasoned entrepreneurs and creative visionaries.";
+  const text = `Invantros is a global "War Room" where Pakistan’s elite talent from FAST, NUST, LUMS, AIR and GCU converges to bypass the cold-start problem and build the future. In this merit-driven ecosystem, we bridge the gap between academic brilliance and industry reality, providing the infrastructure for everyone—from hungry students to seasoned leaders—to dominate the digital landscape.`;
   const words = useMemo(() => text.split(" "), [text]);
 
   return (
@@ -46,10 +46,10 @@ const SecondMainText = () => {
 
       <motion.div 
         style={{ scale: springScale }} 
-        className="max-w-7xl mx-auto"
+        className="max-w-9xl mx-auto"
       >
         <h2 
-          className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1] flex flex-wrap gap-x-[0.3em] gap-y-[0.1em]"
+          className="text-4xl md:text-5xl lg:text-7xl font-light tracking-tight text-slate-900 leading-[1.1] flex flex-wrap gap-x-[0.3em] gap-y-[0.1em]"
           aria-hidden="true" // Hidden from screen readers to prevent word-by-word stutter; sr-only div above handles reading.
         >
           {words.map((word, i) => (
