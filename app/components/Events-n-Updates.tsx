@@ -168,6 +168,7 @@ const AnimatedRow = ({ row }: { row: RowData }) => {
             height={400}
             className="object-cover w-full h-full grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
             priority={row.id <= 2}
+            fetchPriority={row.id <= 2 ? "high" : "auto"}
           />
         </div>
       </Link>

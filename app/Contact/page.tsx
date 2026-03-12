@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 
-import ContactHero from "../components/ContactHero";
-import Socials from "../components/Socials";
-
-
-
-
-
+const ContactHero = dynamic(() => import("../components/ContactHero"));
+const Socials = dynamic(() => import("../components/Socials"));
 export const metadata: Metadata = {
   title: "Contact Invantros | Join the Hub of Pakistan’s Tech Revolution",
   description:
@@ -86,9 +82,8 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-    <ContactHero/>
-    <Socials/>      
-
+      <ContactHero/>
+      <Socials/>      
     </>
   );
 }

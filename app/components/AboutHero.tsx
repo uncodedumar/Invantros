@@ -43,6 +43,7 @@ const HeroSection = () => {
           alt="NOT HERE TO WIN AWARDS. HERE TO HELP YOU WIN. - Invantros x Antrosys"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           className="rounded-[5px] object-cover transition-transform duration-700 hover:scale-105"
         />

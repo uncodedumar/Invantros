@@ -1,18 +1,16 @@
-import Image from "next/image";
+import dynamic from "next/dynamic";
 import HeroSection from "./components/HeroSection";
-import Cards from "./components/cards"
-import MainText from "./components/MainText";
-import Work from "./components/Work";
-import SecondMainText from "./components/SecondMainText";
-import Collabs from "./components/Collabs";
-import Industries from "./components/Industries";
-import Stats from "./components/Stats";
-import Values from "./components/Values";
-import Commitment from "./components/Commitment";
 
-import EventsSecHome from "./components/EventsSecHome";
-
-
+const Cards = dynamic(() => import("./components/cards"));
+const MainText = dynamic(() => import("./components/MainText"));
+const Work = dynamic(() => import("./components/Work"));
+const SecondMainText = dynamic(() => import("./components/SecondMainText"));
+const Collabs = dynamic(() => import("./components/Collabs"));
+const EventsSecHome = dynamic(() => import("./components/EventsSecHome"));
+const Industries = dynamic(() => import("./components/Industries"));
+const Stats = dynamic(() => import("./components/Stats"));
+const Values = dynamic(() => import("./components/Values"));
+const Commitment = dynamic(() => import("./components/Commitment"));
 
 export default function Home() {
   return (
@@ -24,7 +22,7 @@ export default function Home() {
     <Work/>
     <SecondMainText/>
     <Collabs/>
-<EventsSecHome/>
+    <EventsSecHome/>
     <Industries/>
     <Stats/>
     <Values/>

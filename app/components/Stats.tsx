@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useMemo } from "react";
-import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
+import { motion, useMotionValue, useTransform, animate, useInView, Variants } from "framer-motion";
 
 /**
  * SEO & Accessibility Note: 
@@ -54,7 +54,7 @@ const DataSection = () => {
     { label: "Affiliations", value: "8+" },
   ];
 
-  const fadeInVariants: any = {
+  const fadeInVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
       opacity: 1, 

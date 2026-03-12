@@ -6,9 +6,9 @@ import Navigation from "./components/Navbar";
 import Footer from './components/Footer';
 import Grow from "./components/Grow";
 import Boxes from "./components/Boxes";
- import { Analytics } from "@vercel/analytics/next"
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 const poppins = Poppins({
@@ -212,13 +212,15 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <LoadingBar />
-
-         <Navigation />
-         {children}
-         <Grow/>
-         <Boxes/>
-         <Footer />
+        <LoadingBar>
+          <>
+            <Navigation />
+            {children}
+            <Grow/>
+            <Boxes/>
+            <Footer />
+          </>
+        </LoadingBar>
 
         
         <Analytics />

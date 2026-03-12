@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { 
   Instagram, 
@@ -17,8 +17,7 @@ import Link from "next/link";
 const FullscreenMenu = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   const columns = [0, 1, 2, 3, 4];
   
-  // Variants typed loosely to avoid tight coupling to Framer Motion's internal types
-  const columnVariants: any = {
+  const columnVariants: Variants = {
     initial: { height: "0%" },
     animate: (i: number) => ({
       height: "100%",

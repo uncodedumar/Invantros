@@ -136,6 +136,7 @@ const SocialRowComponent = ({ item }: { item: SocialRow }) => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 350px, 450px"
               className="object-cover transition-all duration-700 hover:scale-105"
               priority={item.id === 1}
+              fetchPriority={item.id === 1 ? "high" : "auto"}
             />
           </div>
         </div>

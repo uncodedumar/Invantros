@@ -89,6 +89,7 @@ export default function LeadershipSection() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover  transition-all duration-700 ease-in-out group-hover:scale-105"
                   priority={index < 4}
+                  fetchPriority={index < 4 ? "high" : "auto"}
                 />
               </div>
               

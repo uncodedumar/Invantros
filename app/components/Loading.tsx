@@ -1,7 +1,9 @@
-"use client";
+
+
+﻿"use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 
 interface LoadingScreenProps {
   children: React.ReactNode;
@@ -12,9 +14,9 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
   const [showContent, setShowContent] = useState(false);
 
   // Darkened version of your original color
-  const primaryColor = "#2D1B36"; 
+  const primaryColor = "#2D1B36";
 
-  const columnVariants: any = {
+  const columnVariants: Variants = {
     initial: { height: "0%" },
     animate: (i: number) => ({
       height: "100%",
@@ -67,8 +69,8 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
       </AnimatePresence>
 
       {/* This ensures that 'children' (your site) are only rendered 
-          once the loading animation is complete. 
-      */}
+          once the loading animation is complete. 
+      */}
       {showContent && (
         <motion.div
           initial={{ opacity: 0 }}

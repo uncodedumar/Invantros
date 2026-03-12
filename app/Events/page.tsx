@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 
-import EventsnUpdates from "../components/Events-n-Updates";
-
-
-
-
-
+const EventsnUpdates = dynamic(() => import("../components/Events-n-Updates"));
 export const metadata: Metadata = {
   title: "Invantros Events | Join the Premier Tech Summits & Hackathons in Pakistan",
   description:
@@ -91,10 +87,7 @@ export const metadata: Metadata = {
 export default function Portfolio() {
   return (
     <>
-    <EventsnUpdates/>
-
-
+      <EventsnUpdates/>
     </>
-  
   );
 }
