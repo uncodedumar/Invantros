@@ -5,7 +5,7 @@ import React from "react";
 // Data arrays remain the same
 const row1 = [
   { name: "Analog Services", src: "/Collabs/DEVMACH.png" },
-  { name: "Sequel", src: "/Collabs/ANTROSYS.png" },
+  { name: "Sequel", src: "/Collabs/antrosys.avif" },
   { name: "UCSF", src: "/Collabs/BRICKLIX.png" },
   { name: "Lumanu", src: "/Collabs/CINQO.png" },
 ];
@@ -75,7 +75,7 @@ export default function TrustedBySection() {
       <div 
         className="relative w-full max-w-[1400px] overflow-hidden rounded-[40px] py-20 md:py-32 flex flex-col gap-12 md:gap-20"
         style={{
-          backgroundImage: `url('/clouds.png')`,
+          backgroundImage: `url('/clouds.avif')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

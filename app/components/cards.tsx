@@ -24,13 +24,13 @@ const AntrosysMembership = () => {
       title: "Architectural Access",
       desc: "Direct pathways to founders and operators from FAST, NUST, and LUMS.",
       icon: <Plane className="w-6 h-6" />,
-      img: "/Images/Architectural Access.jpg",
+      img: "/Images/Architectural Access.avif",
     },
     {
       title: "Elite Infrastructure",
       desc: "Next-gen AI tools and creative resources to bypass the cold-start problem.",
       icon: <Bot className="w-6 h-6" />,
-      img: "/Images/Elite Infrastructure.jpg",
+      img: "/Images/Elite Infrastructure.avif",
     },
     {
       title: "The War Room",
@@ -42,7 +42,7 @@ const AntrosysMembership = () => {
       title: "Merit-Driven Growth",
       desc: `A high-velocity network that rewards "Proof of Work" over empty networking.`,
       icon: <Briefcase className="w-6 h-6" />,
-      img: "/Images/Merit-Driven Growth.jpg",
+      img: "/Images/Merit-Driven Growth.avif",
     },
   ];
 

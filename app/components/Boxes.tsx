@@ -41,7 +41,7 @@ const BentoGrid = () => {
         {/* Brain Image (Left Tall) */}
         <div className="col-span-4 md:col-span-2 row-span-2 rounded-xl overflow-hidden shadow-sm border border-gray-100">
           <img 
-            src="/antrosys.png" 
+            src="/antrosys.avif" 
             className="w-full h-full object-cover" 
             alt="Advanced Neural AI Visualization - Antrosys Intelligence" 
             loading="lazy"
@@ -50,7 +50,7 @@ const BentoGrid = () => {
         {/* Brain Image (Left Tall) */}
         <div className="col-span-4 md:col-span-2 row-span-2 rounded-xl overflow-hidden shadow-sm border border-gray-100">
           <img 
-            src="/devmach3d.png" 
+            src="/devmach3d.avif" 
             className="w-full h-full object-cover" 
             alt="Advanced Neural AI Visualization - Antrosys Intelligence" 
             loading="lazy"
@@ -64,7 +64,7 @@ const BentoGrid = () => {
   <div 
     className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
     style={{ 
-      backgroundImage: `url('/clouds.png')`,
+      backgroundImage: `url('/clouds.avif')`,
       filter: 'blur(8px) brightness(0.9)' // Adjust blur and brightness here
     }}
   />
@@ -128,7 +128,7 @@ const BentoGrid = () => {
         </div>
 
         {/* Video Column (Right Tall) */}
-        <VideoItem src="/Videos/bbV.mp4" className="col-span-4 md:col-span-2 row-span-2" />
+        <VideoItem src="/Videos/bbV.webm" className="col-span-4 md:col-span-2 row-span-2" />
 
       {/* Pfizer Logo */}
 <div className="col-span-2 md:col-span-2 row-span-1 bg-purple border border-gray-100 rounded-xl flex items-center justify-center p-4">

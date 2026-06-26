@@ -39,7 +39,7 @@ const HeroSection = () => {
       <div className="relative rounded-[5px] overflow-hidden w-full shadow-xl h-[70vh] md:h-auto md:aspect-[21/9]">
         {/* Optimized Background Image */}
         <Image
-          src="/clouds.png" 
+          src="/clouds.avif" 
           alt="NOT HERE TO WIN AWARDS. HERE TO HELP YOU WIN. - Invantros x Antrosys"
           fill
           priority
