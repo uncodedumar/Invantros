@@ -37,7 +37,8 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/hero-poster.webp"
           title="Invantros Community Background"
           className="absolute inset-0 w-full h-full object-cover scale-105 pointer-events-none"
         >

@@ -1,8 +1,6 @@
+"use client";
 
-
-﻿"use client";
-
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 
 interface LoadingScreenProps {
@@ -11,9 +9,7 @@ interface LoadingScreenProps {
 
 const LoadingScreen = ({ children }: LoadingScreenProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [showContent, setShowContent] = useState(false);
 
-  // Darkened version of your original color
   const primaryColor = "#2D1B36";
 
   const columnVariants: Variants = {
@@ -38,11 +34,15 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
 
   return (
     <>
+      {/* Children render IMMEDIATELY — not blocked by animation */}
+      {children}
+
+      {/* Loader overlays on top, then exits */}
       <AnimatePresence mode="wait">
         {!isLoaded && (
           <motion.div
             key="loader"
-            className="fixed inset-0 z-[9999] flex overflow-hidden bg-transparent"
+            className="fixed inset-0 z-[9999] flex overflow-hidden"
           >
             {[...Array(5)].map((_, i) => (
               <motion.div
@@ -53,12 +53,7 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
                 animate="animate"
                 exit="exit"
                 onAnimationComplete={() => {
-                  // Once the 5th column finished animating UP, 
-                  // we mark the loader as finished.
-                  if (i === 4) {
-                    setIsLoaded(true);
-                    setShowContent(true);
-                  }
+                  if (i === 4) setIsLoaded(true);
                 }}
                 className="relative h-full flex-1"
                 style={{ backgroundColor: primaryColor }}
@@ -67,19 +62,6 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* This ensures that 'children' (your site) are only rendered 
-          once the loading animation is complete. 
-      */}
-      {showContent && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          {children}
-        </motion.div>
-      )}
     </>
   );
 };
