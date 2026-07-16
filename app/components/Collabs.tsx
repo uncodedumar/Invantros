@@ -5,7 +5,7 @@ import React from "react";
 // Data arrays remain the same
 const row1 = [
   { name: "Analog Services", src: "/Collabs/DEVMACH.png" },
-  { name: "Sequel", src: "/Collabs/antrosys.avif" },
+  { name: "Sequel", src: "/Collabs/ANTROSYS.png" },
   { name: "UCSF", src: "/Collabs/BRICKLIX.png" },
   { name: "Lumanu", src: "/Collabs/CINQO.png" },
 ];
